@@ -97,8 +97,8 @@ class App {
       const view = pose.views[0];
 
       const viewport = this.xrSession.renderState.baseLayer.getViewport(view);
-      //this.renderer.setSize(viewport.width, viewport.height)
-      this.renderer.setSize(window.innerWidth, window.innerHeight)
+      this.renderer.setSize(viewport.width, viewport.height)
+      // this.renderer.setSize(window.innerWidth, window.innerHeight)
 
       // Use the view's transform matrix and projection matrix to configure the THREE.camera.
       this.camera.matrix.fromArray(view.transform.matrix)
