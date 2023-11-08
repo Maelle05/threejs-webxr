@@ -1,0 +1,22 @@
+div.debug {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body #unsupported-browser{
+    display: none;
+}
+
+body.ar #supported-browser{
+    display: none;
+}
+
+body.unsupported #supported-browser {
+    display: none;
+}
+
+body.unsupported #unsupported-browser {
+    display: block;
+}
